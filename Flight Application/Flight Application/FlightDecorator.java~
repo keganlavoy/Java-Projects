@@ -1,0 +1,15 @@
+abstract class FlightDecorator {
+
+    private Flight flight;
+
+    FlightDecorator(Flight flightToDecorate) {
+	flight = flightToDecorate;
+    }
+
+    abstract boolean extraLegroomSeats();
+    abstract boolean inFlightMeals();
+    abstract boolean excessBaggage();
+    
+
+
+}

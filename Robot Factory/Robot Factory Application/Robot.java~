@@ -1,0 +1,24 @@
+public abstract class Robot {
+
+    private String type;
+    private String manufacturer;
+    private double serialNumber;
+
+
+    public void setType(String type) {this.type = type;}
+    public String getType() {return type;}
+
+    
+    public void setManufacturer(String manufacturer)
+    {this.manufacturer = manufacturer;}
+    public String getManufacturer() {return manufacturer;}
+
+    
+    public void setSerialNumber(double serialNumber)
+    {this.serialNumber = serialNumber;}
+    public double getSerialNumber() {return serialNumber;}
+
+    abstract void fetchParts();
+    abstract void doTask();
+    abstract void storeParts();
+}

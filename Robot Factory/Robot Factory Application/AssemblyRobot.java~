@@ -1,0 +1,22 @@
+public class AssemblyRobot extends Robot {
+
+    static AssemblyRobot singletonRobot = new AssemblyRobot();
+
+    private AssemblyRobot(){}
+    
+    public static AssemblyRobot getInstance() {
+	return singletonRobot;
+    }
+
+    public void fetchParts() {
+	System.out.println("Drilled part fetched");
+    }
+
+    public void doTask() {
+	System.out.println("Product assembled");
+    }
+
+    public void storeParts() {
+	System.out.println("Product sent to storage");
+    }
+}
